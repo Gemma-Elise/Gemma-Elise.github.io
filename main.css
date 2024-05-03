@@ -243,6 +243,19 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  #gallery img:nth-child(3) {
+    order: 5;
+  }
+  #gallery img:nth-child(4) {
+    order: 6;
+  }
+  #gallery img:nth-child(7) {
+    order: 7;
+  }
+  #gallery img:nth-child(8) {
+    order: 8;
+  }
+
   #footer-image {
     height: 200px;
   }
