@@ -114,6 +114,10 @@ body {
   justify-content: space-between;
 }
 
+#header a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #navigation {
   display: flex;
   align-items: center;
