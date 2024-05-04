@@ -222,7 +222,7 @@ body {
   }
 
   #left-image {
-    max-height: 450px;
+    width: 90%;
     order: 1;
   }
 
@@ -258,5 +258,15 @@ body {
 
   #footer-image {
     height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  #title {
+    width: 100px;
+  }
+
+  #mountain-image {
+    width: 90%;
   }
 }
