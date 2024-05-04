@@ -28,6 +28,18 @@
   src: url("./fonts/cormorant-v21-latin-700italic.woff2") format("woff2");
 }
 
+/* Transitions */
+@keyframes transition-in {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
 /* General settings */
 a,
 h1,
@@ -111,6 +123,7 @@ body {
 
 /* Mountain composite */
 #mountain-composite {
+  animation: transition-in 0.75s;
   grid-area: top-image;
   position: relative;
   text-align: center;
@@ -136,6 +149,7 @@ body {
 
 /* Mid section */
 #mid-section {
+  animation: transition-in 0.75s;
   grid-area: mid-section;
   display: flex;
   flex-wrap: wrap;
@@ -170,6 +184,7 @@ body {
 }
 
 .footer-image {
+  animation: transition-in 0.75s;
   grid-area: gallery;
   width: 100%;
   height: 300px;
@@ -187,6 +202,7 @@ body {
 
 /* Gallery */
 #gallery {
+  animation: transition-in 0.75s;
   grid-area: gallery;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
