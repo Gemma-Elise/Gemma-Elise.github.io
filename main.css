@@ -199,7 +199,7 @@ body {
   }
 }
 
-@media (orientation: portrait) {
+@media (max-width: 1000px) {
   .container {
     margin-left: 10px;
     margin-right: 10px;
@@ -222,7 +222,7 @@ body {
   }
 
   #left-image {
-    max-height: 300px;
+    max-height: 450px;
     order: 1;
   }
 
