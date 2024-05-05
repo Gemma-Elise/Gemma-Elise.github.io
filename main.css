@@ -70,6 +70,15 @@ a:hover,
   text-decoration: underline;
 }
 
+/* If JavaScript is enabled, the image onload functions (that set opacity=1) will work;
+   this means that we can start off with transparent images then fade them in */
+@media (scripting: enabled) {
+  .ease-load {
+    opacity: 0;
+    transition: all 0.25s ease;
+  }
+}
+
 :root {
   --flexbox-gap: 20px;
   --border-radius: 4px;
@@ -187,9 +196,12 @@ body {
   width: 400px;
 }
 
-.footer-image {
+#footer {
   animation: transition-in 0.75s;
   grid-area: gallery;
+}
+
+.footer-image {
   width: 100%;
   height: 300px;
   object-fit: cover;
