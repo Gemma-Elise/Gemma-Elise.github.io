@@ -25,25 +25,32 @@
 
       <!-- Mountain image and overlay -->
       <div id="mountain-composite">
-        <img
-          id="mountain-image"
-          class="ease-load"
-          onload="this.style.opacity=1"
-          src="./images/Roys Peak.avif"
-          alt="Me on a mountain"
-        />
+        <picture>
+          <source type="image/avif" srcset="./images/Roys%20Peak-2433w.avif 2433w" />
+          <img
+            id="mountain-image"
+            class="ease-load"
+            onload="this.style.opacity=1"
+            src="./images/Roys Peak.jpg"
+            alt="Me on a mountain"
+          />
+        </picture>
+
         <div id="mountain-overlay">"INHALE PETRICHOR. EXHALE POETRY."</div>
       </div>
 
       <!-- Image on the left, content on the right -->
       <div id="mid-section">
-        <img
-          id="left-image"
-          class="ease-load"
-          onload="this.style.opacity=1"
-          src="./images/Cobweb.avif"
-          alt="Cobweb"
-        />
+        <picture>
+          <source type="image/avif" srcset="./images/Cobweb-988w.avif 988w" />
+          <img
+            id="left-image"
+            class="ease-load"
+            onload="this.style.opacity=1"
+            src="./images/Cobweb.jpg"
+            alt="Cobweb"
+          />
+        </picture>
         <div class="prose">
           <h2>WRITER, WANDERER, DREAMER.</h2>
           <br />
@@ -59,70 +66,134 @@
 
       <!-- Gallery section -->
       <div id="gallery">
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Wild garlic.avif"
-          alt="Wild garlic"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Mountain cloud.avif"
-          alt="Mountain cloud"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Fern unfurling.avif"
-          alt="Fern unfurling"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Oak tree silver.avif"
-          alt="Oak tree silver"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Oak leaf.avif"
-          alt="Oak leaf"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Moss.avif"
-          alt="Moss"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Mushroom log.avif"
-          alt="Mushroom log"
-          loading="lazy"
-          fetchpriority="low"
-        />
-        <img
-          class="ease-load gallery-image"
-          onload="this.style.opacity=1"
-          src="./images/Wood anemone.avif"
-          alt="Wood anemone"
-          loading="lazy"
-          fetchpriority="low"
-        />
+        <!-- #1: Wild garlic-835w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Wild%20garlic-835w.avif 835w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Wild garlic.jpg"
+            alt="Wild garlic"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #2: Mountain cloud-835w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Mountain cloud-835w.avif 835w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Mountain cloud.jpg"
+            alt="Mountain cloud"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #3: Fern unfurling-835w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Fern unfurling-835w.avif 835w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Fern unfurling.jpg"
+            alt="Fern unfurling"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #4: Oak tree silver-988w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Oak tree silver-988w.avif 988w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Oak tree silver.jpg"
+            alt="Oak tree silver"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #5: Oak leaf-1080w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Oak leaf-1080w.avif 1080w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Oak leaf.jpg"
+            alt="Oak leaf"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #6: Moss-988w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Moss-988w.avif 988w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Moss.jpg"
+            alt="Moss"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #7: Mushroom log-988w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Mushroom log-988w.avif 988w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Mushroom log.jpg"
+            alt="Mushroom log"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
+        <!-- #8: Wood anemone-835w -->
+        <picture>
+          <source
+            type="image/avif"
+            srcset="./images/Wood anemone-835w.avif 835w"
+            sizes="(min-width: 1600px) 12vw, (min-width: 1000px) 25vw, 50vw"
+          />
+          <img
+            class="ease-load gallery-image"
+            onload="this.style.opacity=1"
+            src="./images/Wood anemone.jpg"
+            alt="Wood anemone"
+            loading="lazy"
+            fetchpriority="low"
+          />
+        </picture>
       </div>
     </div>
   </body>

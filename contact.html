@@ -45,13 +45,16 @@
         <div id="right-placeholder"></div>
       </div>
       <div id="footer">
-        <img
-          id="mountain-ridge"
-          class="ease-load footer-image"
-          onload="this.style.opacity=1"
-          src="./images/Mountain ridge.avif"
-          alt="Mountain ridge"
-        />
+        <picture>
+          <source type="image/avif" srcset="./images/Mountain%20ridge-2225w.avif 2225w" />
+          <img
+            id="mountain-ridge"
+            class="ease-load footer-image"
+            onload="this.style.opacity=1"
+            src="./images/Mountain ridge.jpg"
+            alt="Mountain ridge"
+          />
+        </picture>
       </div>
     </div>
   </body>
