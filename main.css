@@ -51,11 +51,7 @@ h6 {
   all: unset;
 }
 
-h1 {
-  display: block;
-  font-size: xx-large;
-}
-
+h1,
 h2 {
   display: block;
   font-size: 200%;
@@ -119,7 +115,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--flexbox-gap);
-  font-size: x-large;
+  font-size: 150%;
 }
 
 /* Mountain composite */
@@ -160,7 +156,7 @@ body {
   width: 40%;
   margin-left: 40px;
   margin-right: 40px;
-  font-size: x-large;
+  font-size: 150%;
 }
 
 .mid-section-image {
