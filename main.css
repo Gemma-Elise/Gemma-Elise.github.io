@@ -108,7 +108,7 @@ body {
     "gallery";
 }
 
-#frontpage {
+#homepage {
   grid-template-areas:
     "header"
     "top-image"
