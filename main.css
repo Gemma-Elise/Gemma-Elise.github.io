@@ -280,7 +280,9 @@ body {
   #right-placeholder {
     max-width: 300px;
   }
+}
 
+@media (max-width: 600px) {
   #gallery {
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
