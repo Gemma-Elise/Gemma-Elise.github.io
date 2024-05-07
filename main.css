@@ -306,10 +306,23 @@ body {
 
 @media (max-width: 400px) {
   #title {
-    width: 100px;
+    width: 8em;
   }
 
-  #mountain-image {
-    width: 90%;
+  #mountain-overlay {
+    font-size: 175%;
+  }
+
+  .prose {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #right-image {
+    max-width: 275px;
+  }
+
+  #right-placeholder {
+    max-width: 275px;
   }
 }
