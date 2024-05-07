@@ -102,23 +102,10 @@ body {
   margin-bottom: 30px;
   gap: 60px;
   display: grid;
-  grid-template-areas:
-    "header"
-    "mid-section"
-    "gallery";
-}
-
-#homepage {
-  grid-template-areas:
-    "header"
-    "top-image"
-    "mid-section"
-    "gallery";
 }
 
 /* Header */
 #header {
-  grid-area: header;
   display: flex;
   justify-content: space-between;
   text-underline-offset: 0.3em;
@@ -138,7 +125,6 @@ body {
 /* Mountain composite */
 #mountain-composite {
   animation: transition-in 0.75s;
-  grid-area: top-image;
   position: relative;
   text-align: center;
 }
@@ -164,7 +150,6 @@ body {
 /* Mid section */
 #mid-section {
   animation: transition-in 0.75s;
-  grid-area: mid-section;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -195,7 +180,6 @@ body {
 
 #footer {
   animation: transition-in 0.75s;
-  grid-area: gallery;
 }
 
 .footer-image {
@@ -216,7 +200,6 @@ body {
 /* Gallery */
 #gallery {
   animation: transition-in 0.75s;
-  grid-area: gallery;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: var(--flexbox-gap);
