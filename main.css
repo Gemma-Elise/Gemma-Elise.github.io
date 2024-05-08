@@ -139,11 +139,11 @@ body {
 #mountain-overlay {
   position: absolute;
   color: white;
-  font-size: 300%;
+  font-size: 275%;
   font-style: italic;
   font-weight: bold;
   width: 90%;
-  top: 15%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -234,7 +234,7 @@ body {
 
   #mountain-overlay {
     font-size: 200%;
-    top: 5%;
+    top: 6%;
   }
 
   .prose {
