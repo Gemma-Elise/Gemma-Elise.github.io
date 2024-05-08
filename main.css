@@ -51,8 +51,7 @@ h6 {
   all: unset;
 }
 
-h1,
-h2 {
+h1 {
   display: block;
   font-size: 200%;
 }
@@ -109,6 +108,10 @@ body {
 
 #header a {
   -webkit-tap-highlight-color: transparent;
+}
+
+#title {
+  font-size: 200%;
 }
 
 #navigation {
@@ -271,7 +274,7 @@ body {
 
 @media (max-width: 400px) {
   #title {
-    width: 8em;
+    width: 120px;
   }
 
   #mountain-overlay {
