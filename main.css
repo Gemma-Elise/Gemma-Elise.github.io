@@ -139,8 +139,10 @@ body {
   font-size: 300%;
   font-style: italic;
   font-weight: bold;
-  width: 100%;
+  width: 90%;
   top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 /* Mid section */
@@ -273,7 +275,7 @@ body {
   }
 
   #mountain-overlay {
-    font-size: 175%;
+    font-size: 170%;
   }
 
   .prose {
