@@ -170,7 +170,8 @@ a {
   font-size: 150%;
 }
 
-.mid-section-image {
+.mid-section-image,
+#instagram-feed {
   width: 450px;
   height: 630px;
   object-fit: cover;
@@ -198,10 +199,6 @@ a {
 
 #scotland-river {
   object-position: center 70%;
-}
-
-#fern-raindrops {
-  object-position: center top;
 }
 
 /* Gallery */
@@ -262,7 +259,8 @@ button:hover {
     width: 100%;
   }
 
-  .mid-section-image {
+  .mid-section-image,
+  #instagram-feed {
     max-width: 340px;
     max-height: 476px;
   }
@@ -306,7 +304,8 @@ button:hover {
     margin-right: 5px;
   }
 
-  .mid-section-image {
+  .mid-section-image,
+  #instagram-feed {
     max-width: 280px;
     max-height: 392px;
   }
