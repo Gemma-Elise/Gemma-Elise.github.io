@@ -220,7 +220,7 @@ button {
   all: unset;
   cursor: pointer;
   color: #ffffff;
-  background-color: #c29d71;
+  background-color: #a66969;
   border-radius: 30px;
   padding: 0.75em 1em;
   transition-duration: 150ms;
@@ -228,7 +228,7 @@ button {
 }
 
 button:hover {
-  background-color: #c29d71ae;
+  background-color: #a66969ae;
 }
 
 @media (max-width: 1600px) {
