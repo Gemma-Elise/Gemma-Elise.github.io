@@ -173,12 +173,14 @@ a {
   font-size: 150%;
 }
 
-.mid-section-image,
-#instagram-feed {
+.mid-section-image {
   width: 450px;
   height: 675px;
   object-fit: cover;
   border-radius: var(--border-radius);
+}
+#instagram-feed {
+  width: 450px;
 }
 
 .image-placeholder {
@@ -262,10 +264,12 @@ button:hover {
     width: 100%;
   }
 
-  .mid-section-image,
-  #instagram-feed {
+  .mid-section-image {
     max-width: 340px;
     max-height: 510px;
+  }
+  #instagram-feed {
+    max-width: 340px;
   }
 }
 
@@ -307,9 +311,11 @@ button:hover {
     margin-right: 5px;
   }
 
-  .mid-section-image,
-  #instagram-feed {
+  .mid-section-image {
     max-width: 280px;
     max-height: 420px;
+  }
+  #instagram-feed {
+    max-width: 280px;
   }
 }
