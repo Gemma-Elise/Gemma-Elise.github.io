@@ -176,7 +176,7 @@ a {
 .mid-section-image,
 #instagram-feed {
   width: 450px;
-  height: 630px;
+  height: 675px;
   object-fit: cover;
   border-radius: var(--border-radius);
 }
@@ -186,7 +186,7 @@ a {
 }
 
 #bio-image {
-  object-position: center 10%;
+  object-position: center 0%;
 }
 
 #footer {
@@ -265,7 +265,7 @@ button:hover {
   .mid-section-image,
   #instagram-feed {
     max-width: 340px;
-    max-height: 476px;
+    max-height: 510px;
   }
 }
 
@@ -310,6 +310,6 @@ button:hover {
   .mid-section-image,
   #instagram-feed {
     max-width: 280px;
-    max-height: 392px;
+    max-height: 420px;
   }
 }
