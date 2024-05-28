@@ -133,6 +133,11 @@ body {
   font-size: 150%;
 }
 
+.g-flower {
+  width: 1.5em;
+  height: 1.5em;
+}
+
 #navigation > label {
   display: none;
 }
