@@ -78,10 +78,13 @@ a:not(:has(button)):focus,
 :root {
   --flexbox-gap: 20px;
   --border-radius: 4px;
+  --foreground: #383b4b;
+  --background: #dcd9d0;
 }
 
 body {
-  background-color: #dcd9d0;
+  color: var(--foreground);
+  background-color: var(--background);
   font-family: "Cormorant", serif;
 }
 
