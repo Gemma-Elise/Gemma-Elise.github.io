@@ -345,6 +345,12 @@ button:hover {
   }
 }
 
+@media (max-width: 1000px) and (orientation: landscape) {
+  .sidebar > nav {
+    margin-top: 0%;
+  }
+}
+
 @media (max-width: 1000px) {
   .container {
     margin-left: 10px;
