@@ -41,6 +41,12 @@
 }
 
 /* General settings */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 a,
 h1,
 h2,
@@ -80,12 +86,18 @@ a:not(:has(button)):focus,
   --border-radius: 4px;
   --foreground: #383b4b;
   --background: #dcd9d0;
+  --bar-width: 30px;
+  --bar-height: 2px;
+  --burger-gap: 6px;
+  --animation-timing: 200ms ease-in-out;
+  --burger-height: calc(var(--bar-height) * 3 + var(--burger-gap) * 2);
 }
 
 body {
   color: var(--foreground);
   background-color: var(--background);
   font-family: "Cormorant", serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .spamspango,
@@ -110,10 +122,6 @@ body {
   text-underline-offset: 0.3em;
 }
 
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
 #title {
   font-size: 200%;
 }
@@ -123,6 +131,96 @@ a {
   align-items: center;
   gap: var(--flexbox-gap);
   font-size: 150%;
+}
+
+#navigation > label {
+  display: none;
+}
+
+.burger-menu {
+  --x-width: calc(var(--burger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--burger-gap);
+  width: max-content;
+  cursor: pointer;
+}
+
+.burger-menu:has(input:focus-visible)::before,
+.burger-menu:has(input:focus-visible)::after,
+.burger-menu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.burger-menu::before,
+.burger-menu::after,
+.burger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+.burger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.burger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.burger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.burger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  position: absolute;
+  top: calc((50px + 30px + 8px));
+  left: 0px;
+  background-color: var(--background);
+  /* border: 12px solid #a66969ae;
+  border-radius: var(--border-radius); */
+  visibility: collapse;
+  width: 100%;
+  height: 0px;
+  opacity: 0;
+  transition: all 0.25s;
+  z-index: 100;
+}
+
+.sidebar > nav {
+  margin-top: 25%;
+  display: grid;
+  gap: 20px;
+  font-size: 175%;
+  text-align: center;
+}
+
+.sidebar.active {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  overflow: hidden;
 }
 
 /* Mountain composite */
@@ -253,6 +351,13 @@ button:hover {
 
   #navigation {
     gap: 10px;
+  }
+
+  #navigation > label {
+    display: flex;
+  }
+  #navigation > div {
+    display: none;
   }
 
   #composite-text {
