@@ -5,19 +5,25 @@
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://gemmaelise.co.uk/index.html</loc>
-        <lastmod>2024-05-04</lastmod>
+        <lastmod>2024-05-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://gemmaelise.co.uk/about.html</loc>
-        <lastmod>2024-05-04</lastmod>
+        <lastmod>2024-05-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gemmaelise.co.uk/contact.html</loc>
-        <lastmod>2024-05-04</lastmod>
+        <lastmod>2024-05-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gemmaelise.co.uk/yoga.html</loc>
+        <lastmod>2024-05-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
