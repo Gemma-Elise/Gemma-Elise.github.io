@@ -343,6 +343,10 @@ button:hover {
   #gallery {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  h1 {
+    font-size: 140%;
+  }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
