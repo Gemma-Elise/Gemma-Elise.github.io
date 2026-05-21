@@ -6,6 +6,8 @@
     <title>About Gemma Elise Yoga & Meditation teacher in Gower, Mumbles, and Swansea</title>
     <link rel="stylesheet" href="main.css?v=5" />
     <script type="module" src="main.js"></script>
+    <script type="module" src="https://w.behold.so/widget.js"></script>
+
     <meta
       name="description"
       content="About Gemma Elise private yoga and meditation teacher in Gower, Mumbles and Swansea."
@@ -107,19 +109,24 @@
            
           <a href="private-yoga.html"><button>Practice with me</button></a>
         </div>
-        <picture>
-          <source
-            type="image/avif"
-            srcset="./images/Gem_tree_photo-1920w.avif"
-          />
-          <img
-            id="bio-image"
-            class="ease-load mid-section-image"
-            onload="this.style.opacity = 1"
-            src="./images/Gem_tree_photo.jpg"
-            alt="Gem bio photo"
-          />
-        </picture>
+        <div id="behold-combo">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="./images/Gem_tree_photo-1920w.avif"
+            />
+            <img
+              id="bio-image"
+              class="ease-load mid-section-image"
+              onload="this.style.opacity = 1"
+              src="./images/Gem_tree_photo.jpg"
+              alt="Gem bio photo"
+            />
+          </picture>
+          <div id="instagram-feed">
+            <behold-widget feed-id="g7GbKId8Gm0kq4IxRoad"></behold-widget>
+          </div>
+        </div>
       </div>
     </div>
   </body>

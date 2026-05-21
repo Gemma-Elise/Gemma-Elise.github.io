@@ -289,6 +289,13 @@ body {
   object-fit: cover;
   border-radius: var(--border-radius);
 }
+
+#behold-combo {
+  display: grid;
+  gap: 20px;
+  justify-content: space-between;
+}
+
 #instagram-feed {
   width: 450px;
 }
