@@ -353,6 +353,10 @@ button:hover {
   background-color: #a66969ae;
 }
 
+.contact-ul {
+  list-style-type: none;
+}
+
 @media (max-width: 1600px) {
   #gallery {
     grid-template-columns: repeat(4, 1fr);
