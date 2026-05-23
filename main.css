@@ -412,6 +412,10 @@ button:hover {
   #instagram-feed {
     max-width: 340px;
   }
+
+  .contact-ul {
+    padding-inline-start: 0.5em;
+  }
 }
 
 @media (max-width: 600px) {
