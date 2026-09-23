@@ -4,37 +4,37 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://gemmaelise.co.uk/index.html</loc>
+        <loc>https://gemmaelise.co.uk/</loc>
         <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://gemmaelise.co.uk/practice-online.html</loc>
+        <loc>https://gemmaelise.co.uk/practice-online</loc>
         <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
         <url>
-        <loc>https://gemmaelise.co.uk/private-yoga.html</loc>
+        <loc>https://gemmaelise.co.uk/private-yoga</loc>
         <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gemmaelise.co.uk/meditation.html</loc>
+        <loc>https://gemmaelise.co.uk/meditation</loc>
         <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gemmaelise.co.uk/contact.html</loc>
+        <loc>https://gemmaelise.co.uk/contact</loc>
         <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gemmaelise.co.uk/my-story.html</loc>
+        <loc>https://gemmaelise.co.uk/my-story</loc>
         <lastmod>2026-05-13</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
